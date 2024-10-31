@@ -47,7 +47,7 @@ return {
   },
   config = function(_, opts)
     require("catppuccin").setup(opts)
-    vim.cmd.colorscheme("catppuccin-macchiato")
+    vim.cmd.colorscheme("catppuccin-mocha")
 --set catppuccin keybinds
     vim.keymap.set("n", "<leader>tt", function()
       local cat = require("catppuccin")

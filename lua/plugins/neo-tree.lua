@@ -8,5 +8,12 @@ return {
    },
    config = function()
       vim.keymap.set('n', '<C-n>', ":Neotree filesystem toggle<CR>", {})
+      require("neo-tree").setup({
+         filesystem = {
+            filtered_items = {
+               hide_dotfiles = false,  -- Set this to `false` to show hidden files
+            },
+         },
+      })
    end
 }
